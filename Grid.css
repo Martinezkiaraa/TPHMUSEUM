@@ -1,0 +1,31 @@
+/*--Grid contenido & aside--*/
+.grid{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    align-items: start;
+    }
+header{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+.Content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+}
+.BigContent{
+display: grid;
+grid-template-columns: 100%;
+
+}
+@media (max-width: 760px){
+ .grid {
+    display: grid;
+    grid-template-columns: 100%;
+}
+    .Content {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-column-gap: 5px;
+    }
+}

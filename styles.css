@@ -1,0 +1,595 @@
+body{
+    margin: 0;
+    background-color: whitesmoke;
+    margin-left: 0px;
+}
+
+/*VENTANA BIENVENIDO*/
+.modal{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    animation: modal 2s 2s forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+.modal2 {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    animation: modal 2s 5s forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+.main{
+    width: 500px;
+    height: auto;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 0px 5px rgba(0,0,0,.25);
+}
+.main2{
+    width: 500px;
+    height: auto;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 0px 5px rgba(0,0,0,.25);
+}
+
+  /*BOTON CERRAR VENTANA*/
+#cerrar{
+   display: none;
+}
+#cerrar2{
+    display: none;
+}
+#cerrar + label{
+    z-index:50; 
+    position:fixed;
+    color: white;
+    font-size: 25px;
+    background-color: black;
+    text-align: center;
+    height: 30px;
+    width: 40px;
+    margin-top: 3px;
+    font-family: 'Roboto Condensed';
+    border-radius: 20px;
+    right: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.25);
+    
+    animation: modal 2s 2s forwards;
+    visibility: hidden;
+    opacity: 0;  
+}
+#cerrar2 + label {
+    z-index:50; 
+    position:fixed;
+    color: white;
+    font-size: 25px;
+    background-color: black;
+    text-align: center;
+    height: 30px;
+    width: 40px;
+    margin-top: 3px;
+    font-family: 'Roboto Condensed';
+    border-radius: 20px;
+    right: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.25);
+    
+    animation: modal 2s 5s forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+#cerrar + label:hover{
+    color: black;
+    background-color: white;
+}
+#cerrar2 + label:hover{
+    color: black;
+    background-color: white;
+}
+/*-------*/
+header {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    position: sticky ;
+    top:0;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 18.75rem;
+    box-shadow: 1px 5px 5px rgba(0,0,0,.25);
+    background-color: white;
+}
+
+ #mainlogo{
+    width: 140px;
+    height: 140px;
+    right: 0;
+    margin-left: 160px;
+}
+.title{
+    padding-bottom: 2px;
+    padding-top: 1px;
+    margin-left: 10px ;
+}
+
+ /*----*/
+.Content{
+    width: auto;
+    margin: 0.625rem;
+    line-height: 3.125rem;
+}
+/*articulos*/
+.article{
+    text-align: center;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.25);
+}
+/* enlance articulos*/
+.article> a {
+    text-decoration: none;
+    color: black;
+}
+/*articulo en grande*/
+.bigarticle{
+    margin: 10px;
+    text-align: center;
+ background-color: white;
+ box-shadow: 2px 2px 10px rgba(0,0,0,.25);
+}
+.bigtwoarticle{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+/*--IMAGENES--*/
+
+#obras{
+    max-width: 100%;
+    width: 350px;
+    height: auto;
+
+}
+/*ASIDE PAG PRINCIPAL*/
+.aside{
+    background-color: black;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 8px;
+    text-align: center;
+    margin-bottom: 8px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.25);
+}
+.aside h2{
+    font-family: 'Spartan', cursive;
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+}
+.aside p{
+    margin: 10px;
+    font-family: 'Roboto Condensed', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    text-align: left;
+    color: white;
+}
+/*ASIDE CON NAV */
+.menu ul{
+    margin: 0;
+    list-style: none;
+   padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.menu li:hover{
+    background: white;
+    border-radius: 3px;
+}
+/*LOGOS ASIDE*/
+#logos{
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+}
+/*---*/
+footer{
+    background-color: black;
+    width: 100%;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-family: 'Spartan', cursive;
+}
+.clearfix {
+    clear: both;
+}
+/*LETRAS*/
+h1{
+    font-family: 'Playfair Display', cursive;
+    font-size: 40px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+h2{
+    
+    font-family: 'Spartan', cursive;
+    text-align: center;
+    font-size: xx-large;
+}
+h3{
+    font-family: 'Roboto Condensed';
+    text-align:center;
+    font-size: medium;
+    color: white;
+}
+h4{
+    font-family: 'Roboto Mono', cursive;
+    font-size: 15px;
+    margin-left: 40px;
+    margin-top: 0px;
+    color: black;
+}
+p{
+    font-family: 'Roboto Condensed', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    text-align: center;
+    color: black;
+}
+/*FUNCION CERRAR VENTANA*/
+#cerrar:checked + label, #cerrar:checked ~ .modal {
+    display: none;
+}
+#cerrar2:checked + label, #cerrar2:checked ~ .modal2 {
+    display: none;
+}
+@keyframes modal {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+}
+@keyframes modal2 {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+}
+
+/*RESPONSIVE--------------------------------------------------------------------*/
+@media (max-width:760px){
+
+    /*VENTANA BIENVENIDO*/
+.modal{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    animation: modal 2s 2s forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+.modal2 {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    animation: modal 2s 5s forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+.main{
+    width: 320px;
+    height: auto;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 0px 5px rgba(0,0,0,.25);
+}
+.main2{
+    width: 320px;
+    height: auto;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 0px 5px rgba(0,0,0,.25);
+}
+
+  /*BOTON CERRAR VENTANA*/
+#cerrar{
+   display: none;
+}
+#cerrar2{
+    display: none;
+}
+#cerrar + label{
+    z-index:50; 
+    position:fixed;
+    color: white;
+    font-size: 25px;
+    background-color: black;
+    text-align: center;
+    height: 30px;
+    width: 35px;
+    margin-top: 10px;
+    font-family: 'Roboto Condensed';
+    border-radius: 10px;
+    right: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.25);
+    
+    animation: modal 2s 2s forwards;
+    visibility: hidden;
+    opacity: 0;  
+}
+#cerrar2 + label {
+    z-index:50; 
+    position:fixed;
+    color: white;
+    font-size: 25px;
+    background-color: black;
+    text-align: center;
+    height: 30px;
+    width: 35px;
+    margin-top: 10px;
+    font-family: 'Roboto Condensed';
+    border-radius: 10px;
+    right: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.25);
+    
+    animation: modal 2s 5s forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+#cerrar + label:hover{
+    color: black;
+    background-color: white;
+}
+#cerrar2 + label:hover{
+    color: black;
+    background-color: white;
+}
+/*-------*/
+header {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    position: sticky ;
+    top:0;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 18.75rem;
+    box-shadow: 1px 5px 5px rgba(0,0,0,.25);
+    background-color: white;
+}
+
+ #mainlogo{
+    width: 50px;
+    height: 50px;
+    right: 0;
+    margin-left: 40px;
+}
+.title{
+    padding-bottom: 2px;
+    padding-top: 1px;
+    margin-left: 5px ;
+}
+/*--Grid contenido & aside--*/
+/*.grid{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    }*/
+/*ASIDE PAG PRINCIPAL*/
+.aside{
+    width: 100%;
+    background-color: black;
+    margin-left: 0px;
+    margin-top: 4px;
+    text-align: center;
+    margin-bottom: 4px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.25);
+}
+.aside h2{
+    font-family: 'Spartan', cursive;
+    text-align: center;
+    font-size: medium;
+    color: white;
+    margin-top: 5px;
+}
+.aside p{
+    margin: 10px;
+    font-family: 'Roboto Condensed', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    text-align: left;
+    color: white;
+}
+/*ASIDE CON NAV*/
+.menu ul{
+    margin: 0;
+    list-style: none;
+   padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.menu li:hover{
+    background: white;
+    border-radius: 3px;
+}
+/*LOGOS ASIDE*/
+#logos{
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+}
+/*.clearfix {
+    clear: both;
+}*/
+ /*----*/
+.Content{
+    width: auto;
+    margin: 0.625rem;
+    line-height: 3.125rem;
+}
+/*articulos*/
+.article{
+    text-align: center;
+    height: auto;
+    width: auto;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.25);
+}
+/* enlance articulos*/
+.article> a {
+    text-decoration: none;
+    color: black;
+}
+/*articulo en grande*/
+.bigarticle{
+    text-align: center;
+ background-color: white;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ box-shadow: 2px 2px 10px rgba(0,0,0,.25);
+}
+
+/*--IMAGENES--*/
+
+#obras{
+    max-width: 100%;
+    height: auto;
+}
+
+/*ASIDE CON NAV */
+.menu ul{
+    margin: 0;
+    list-style: none;
+   padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.menu li:hover{
+    background: white;
+    border-radius: 3px;
+}
+/*LOGOS ASIDE*/
+#logos{
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+}
+/*---*/
+footer{
+    background-color: black;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    height: 35px;
+    line-height: 33px;
+    font-family: 'Spartan', cursive;
+}
+
+/*LETRAS*/
+h1{
+    font-family: 'Playfair Display', cursive;
+    font-size: 15px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+}
+h2{
+    
+    font-family: 'Spartan', cursive;
+    text-align: center;
+    font-size: medium;
+    margin: 0px;
+}
+
+h3{
+    font-family: 'Roboto Condensed';
+    text-align:center;
+    font-size: small;
+    color: white;
+}
+h4{
+    font-family: 'Roboto Mono', cursive;
+    font-size: 7px;
+    margin-left: 30px;
+    margin-top: 0px;
+    color: black;
+}
+p{
+    font-family: 'Roboto Condensed', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    margin: 5px;
+}
+/*FUNCION CERRAR VENTANA*/
+#cerrar:checked + label, #cerrar:checked ~ .modal {
+    display: none;
+}
+#cerrar2:checked + label, #cerrar2:checked ~ .modal2 {
+    display: none;
+}
+@keyframes modal {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+}
+@keyframes modal2 {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+}
+    
+}
